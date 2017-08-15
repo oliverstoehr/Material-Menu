@@ -1,1 +1,53 @@
 /* Stylesheet for Material Menu */
+.material-menu.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 999;
+}
+
+.material-menu .menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	overflow: scroll;
+	width: auto;
+	max-width: 90%;
+	background-color: white;
+	padding: 0px 0px 50px 0px;
+}
+
+.material-menu h1, .material-menu h2, .material-menu h3, .material-menu h4, .material-menu h5 {
+	padding: 0 30px;
+	margin: 20px 0;
+}
+
+.material-menu p {
+	padding: 0 30px;
+	margin: 20px 0;
+	/*width: 250px;*/
+}
+
+.material-menu .menu ul {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+}
+
+.material-menu .menu ul > li {
+	padding: 10px 30px 10px 40px;
+	
+}
+
+.material-menu .menu ul > li:hover {
+	background-color: lightgrey;
+}
+
+.material-menu hr {
+	border: none;
+	border-top: solid 1px lightgrey;
+}
