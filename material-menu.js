@@ -6,7 +6,11 @@ function registerMenu() {
 	var toggles = document.getElementsByClassName("material-menu-toggle");
 	
 	menu.addEventListener("click", function () {
-		toggleMenu(this);
+		if (event.target.classList.contains("material-wrapper")) {
+			toggleMenu(this);
+		} else if (event.target.nodeName == 'A') {
+			toggleMenu(this);
+		}				
 	});
 
 	for (i = 0; i < toggles.length; i++) {
