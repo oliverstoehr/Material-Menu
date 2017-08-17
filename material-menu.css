@@ -1,5 +1,5 @@
 /* Stylesheet for Material Menu */
-#material-menu.wrapper {
+#material-menu.material-wrapper {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,13 +12,13 @@
 	transition: 0.1s;
 }
 
-#material-menu.wrapper.active {
+#material-menu.material-wrapper.active {
 	pointer-events: all;
 	opacity: 1;
 	transition: 0.1s;
 }
 
-#material-menu .menu {
+#material-menu .material-content {
 	position: fixed;
 	top: 0;
 	left: -100%;
@@ -31,7 +31,7 @@
 	transition: 0.3s;
 }
 
-#material-menu.active .menu {
+#material-menu.active .material-content {
 	left: 0;
 	transition: 0.3s;
 }
@@ -41,28 +41,37 @@
 	margin: 20px 0;
 }
 
-#material-menu p {
-	padding: 0 30px;
-	margin: 20px 0;
-	/*width: 250px;*/
-}
-
-#material-menu .menu ul {
+#material-menu .material-content .material-list,
+#material-menu .material-content .material-list-link {
 	list-style: none;
 	margin: 20px 0;
 	padding: 0;
 }
 
-#material-menu .menu ul > li {
+
+#material-menu .material-content .material-list > li {
 	padding: 10px 30px 10px 40px;
-	
+	font-style: italic;
 }
 
-#material-menu .menu ul > li:hover {
+#material-menu .material-content .material-list-link a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	padding: 10px 30px 10px 40px;
+}
+
+#material-menu .material-content .material-list-link a:hover {
 	background-color: lightgrey;
 }
 
 #material-menu hr {
 	border: none;
 	border-top: solid 1px lightgrey;
+}
+
+#material-menu p {
+	padding: 0 30px;
+	margin: 20px 0;
+	/*width: 250px;*/
 }
